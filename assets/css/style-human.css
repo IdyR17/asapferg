@@ -1,0 +1,568 @@
+/*--------------------------------------------------------------
+# Global Styles
+--------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+hr {
+  border: none;
+}
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media Queries / Breakpoints
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Justify Inline Block Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Transition
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Transform
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Flexbox
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Flexbox child
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Font Mixins
+----------------------------------------------------------------
+EG:
+@mixin serif($weight: regular) {
+  @if $weight == regular {
+    font-family: 'MyFontFace', 'Times', serif;
+  }
+  @else if $weight == bold {
+    font-family: 'MyFontFaceBold', 'Times', serif;
+  }
+  @else if $weight == italic {
+    font-family: 'MyFontFaceItalic', 'Times', serif;
+  }
+} */
+/*--------------------------------------------------------------
+# Font Imports
+--------------------------------------------------------------
+EG:
+@font-face {
+  font-family: 'MyFontFace';
+  src: url('fonts/MyFontFace/regular.otf') format('opentype');
+  src: url('fonts/MyFontFace/regular.woff') format('woff');
+} */
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+}
+
+html {
+  font-size: 10px;
+}
+
+/*--------------------------------------------------------------
+# Headings (h1 through h6)
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 16rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+/*--------------------------------------------------------------
+# Paragraph
+--------------------------------------------------------------*/
+p {
+  font-family: 'Slabo 27px', serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Body
+--------------------------------------------------------------*/
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# Body - Content Wrap
+--------------------------------------------------------------*/
+.asap-wrap {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.asap-container {
+  display: block;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Page Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Lists
+--------------------------------------------------------------*/
+ol,
+ul {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  color: #000000;
+  list-style: disc;
+  width: 80%;
+  margin: 5rem auto;
+}
+@media all and (max-width: 670px) {
+  ol,
+  ul {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 2.5rem auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Figure / Image
+--------------------------------------------------------------*/
+figure {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+figure img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+figure img.desktop {
+  display: inline;
+}
+figure img.mobile {
+  display: none;
+}
+@media all and (max-width: 670px) {
+  figure img.desktop {
+    display: none;
+  }
+  figure img.mobile {
+    display: inline;
+  }
+}
+
+/*--------------------------------------------------------------
+# Form Styles
+--------------------------------------------------------------*/
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# asap responsive video
+--------------------------------------------------------------*/
+.asap-responsive-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.asap-responsive-video__inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.asap-responsive-video__inner video,
+.asap-responsive-video__inner iframe,
+.asap-responsive-video__inner object {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+#asap-hero {
+  min-height: 100vh;
+  background: url("/assets/images/hero_bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+#asap-hero h1 {
+  width: 100%;
+  font-size: 28rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1200px) {
+  #asap-hero h1 {
+    font-size: 20rem;
+  }
+}
+@media (max-width: 750px) {
+  #asap-hero h1 {
+    font-size: 9rem;
+    bottom: auto;
+    top: 40px;
+  }
+}
+#asap-hero h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 750px) {
+  #asap-hero h3 {
+    top: 150px;
+    left: auto;
+    transform: none;
+    right: 20px;
+    text-align: right;
+  }
+}
+
+/*--------------------------------------------------------------
+# Album CTA
+--------------------------------------------------------------*/
+#album-cta {
+  background: #000;
+  color: #FFF;
+  padding: 160px 0;
+}
+@media all and (max-width: 1024px) {
+  #album-cta {
+    padding: 60px 0;
+  }
+}
+#album-cta .album-grid {
+  display: table;
+  width: 100%;
+  height: auto;
+}
+@media all and (max-width: 1024px) {
+  #album-cta .album-grid {
+    display: block;
+  }
+}
+#album-cta .album-grid__image, #album-cta .album-grid__copy {
+  display: table-cell;
+  width: 50%;
+}
+@media all and (max-width: 1024px) {
+  #album-cta .album-grid__image, #album-cta .album-grid__copy {
+    display: block;
+    width: 100%;
+  }
+}
+@media all and (max-width: 1024px) {
+  #album-cta .album-grid__image {
+    text-align: center;
+  }
+}
+#album-cta .album-grid__image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+#album-cta .album-grid__copy {
+  padding-left: 10%;
+  vertical-align: middle;
+}
+@media all and (max-width: 1024px) {
+  #album-cta .album-grid__copy {
+    padding-left: 0;
+    padding-top: 40px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#album-cta .album-grid__copy h4 {
+  margin-bottom: 5px;
+}
+#album-cta .album-grid__copy h2 {
+  margin-bottom: 30px;
+}
+#album-cta .album-grid__link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #FFF;
+  text-transform: uppercase;
+}
+#album-cta .album-grid__link:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/*--------------------------------------------------------------
+# Video Section
+--------------------------------------------------------------*/
+#video-section {
+  padding: 220px 0 160px 0;
+}
+@media all and (max-width: 1024px) {
+  #video-section {
+    padding: 60px 0;
+  }
+}
+#video-section .video-headline-lockup {
+  position: relative;
+  margin-bottom: 30px;
+}
+#video-section .video-headline-lockup h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+  line-height: 0.75;
+}
+@media all and (max-width: 1024px) {
+  #video-section .video-headline-lockup h1 {
+    font-size: 10rem;
+  }
+}
+@media all and (max-width: 790px) {
+  #video-section .video-headline-lockup h1 {
+    position: relative;
+    left: 0;
+    transform: none;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}
+#video-section .video-headline-lockup .asap-responsive-video {
+  position: relative;
+  z-index: 1;
+}
+
+/*--------------------------------------------------------------
+# Slider Section
+--------------------------------------------------------------*/
+#slider-section {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+#slider-section #slider_content {
+  position: relative;
+  width: 100%;
+}
+#slider-section .left-arrow {
+  position: absolute;
+  bottom: 46%;
+  right: 90%;
+  max-width: 5%;
+}
+#slider-section .right-arrow {
+  position: absolute;
+  bottom: 46%;
+  left: 90%;
+  max-width: 5%;
+}
+
+/*--------------------------------------------------------------
+# Form Section
+--------------------------------------------------------------*/
+#form-section .contact {
+  position: relative;
+  margin-top: 50px;
+}
+#form-section .contact .content {
+  padding: 50px 0;
+  text-align: center;
+}
+#form-section .contact .content h2 {
+  font-size: 6.4rem;
+}
+#form-section .contact .content p {
+  margin: 10vh auto;
+  text-align: justify;
+  font-size: 2em;
+  width: 550px;
+}
+#form-section .contact .content .suscribe-form {
+  display: flex;
+  justify-content: center;
+}
+#form-section .contact .content .suscribe-form input {
+  max-height: 70px;
+  padding: 20px 0;
+  border: none;
+  background-color: #f1f1f1;
+}
+#form-section .contact .content .suscribe-form [type='text'] {
+  width: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Oswald', 'Times New Roman', Times, serif;
+  color: #a9a9a9;
+  font-size: 2.6em;
+}
+#form-section .contact .content .suscribe-form input[type='submit'] {
+  width: 100px;
+  background-image: url("/assets/images/submit_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  color: white;
+  font-family: 'Slabo', 'Times New Roman', Times, serif;
+  font-size: 2.4em;
+  background: black;
+  padding: 40px;
+  width: 100vw;
+}

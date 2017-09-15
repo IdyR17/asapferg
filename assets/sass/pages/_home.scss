@@ -1,0 +1,266 @@
+#asap-hero{
+    min-height: 100vh;
+    background: url('/assets/images/hero_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    h1{
+        width: 100%;
+        font-size: 28rem;
+        text-align: center;
+        color:white;
+        position: absolute;
+        bottom: 230px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1200px){
+            font-size: 20rem;
+        }
+
+        @media (max-width: 750px){
+            font-size: 9rem;
+            bottom: auto;
+            top: 40px;
+        }
+        
+    }
+
+     h3{
+        //FIX MEDIA QUERIES FOR IT TO BE RESPONSIVEEEEE
+        
+        font-size: 2.8rem;
+        text-align: center;
+        color: white;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: 750px){
+            top:150px;
+            left: auto;
+            transform:none;
+            right:20px;
+            text-align: right;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Album CTA
+--------------------------------------------------------------*/
+
+#album-cta {
+  background: #000;
+  color: #FFF;
+  padding: 160px 0;
+
+  @include mq($bp-m) {
+    padding: 60px 0;
+  }
+
+  .album-grid {
+    display: table;
+    width: 100%;
+    height: auto;
+
+    @include mq($bp-m) {
+      display: block;
+    }
+
+    &__image,
+    &__copy {
+      display: table-cell;
+      width: 50%;
+
+      @include mq($bp-m) {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__image {
+
+      @include mq($bp-m) {
+        text-align: center;
+      }
+
+      img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__copy {
+      padding-left: 10%;
+      vertical-align: middle;
+
+      @include mq($bp-m) {
+        padding-left: 0;
+        padding-top: 40px;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h4 {
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__link {
+      @include font-oswald;
+      font-size: 2.2rem;
+      line-height: 1;
+      color: #FFF;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+        color: #FFF;
+      }
+    }
+
+
+  }
+
+    
+}
+
+
+/*--------------------------------------------------------------
+# Video Section
+--------------------------------------------------------------*/
+
+#video-section{
+  padding: 220px 0 160px 0;
+
+  @include mq($bp-m) {
+    padding: 60px 0;
+  }
+
+  .video-headline-lockup{
+    position: relative;
+    margin-bottom: 30px;
+
+    h1{
+      position:absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width:100%;
+      z-index:2;
+      line-height: 0.75;
+        @include mq($bp-m) {
+          font-size: 10rem;
+        }
+        @include mq($bp-s) {
+          position: relative;
+          left:0;
+          transform:none;
+          line-height: 1;
+          margin-bottom: 20px;
+        }
+
+    }
+    .asap-responsive-video{
+      position:relative;
+      z-index:1;
+
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Slider Section
+--------------------------------------------------------------*/
+
+#slider-section{
+  position:relative;
+  padding:0;
+  margin:0;
+  #slider_content{
+    position:relative;
+    width: 100%;
+  }
+  .left-arrow{
+    position:absolute;
+    bottom:46%;
+    right:90%;
+    max-width: 5%;
+  }
+  .right-arrow{
+    position:absolute;
+    bottom:46%;
+    left:90%;
+    max-width: 5%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Form Section
+--------------------------------------------------------------*/
+
+#form-section {
+           .contact {
+             position:relative;
+               margin-top: 50px;
+               .content {
+                   padding: 50px 0;
+                   text-align: center;
+                   h2{
+                     font-size : 6.4rem;
+                   }
+                   p {
+                       margin: 10vh auto;
+                       // margin-right: auto;
+                       // margin-left: auto;
+                       text-align: justify;
+                       font-size: 2em;
+                       width: 550px;
+                   }
+                   .suscribe-form {
+                       display: flex;
+                       justify-content: center;
+                       input {
+                           max-height: 70px;
+                           padding: 20px 0;
+                           border: none;
+                           background-color: #f1f1f1 ;
+                       }
+                       [type='text'] {
+                           width: 400px;
+                           padding-left: 25px;
+                           padding-right: 25px;
+                           font-family: 'Oswald', 'Times New Roman', Times, serif;
+                           color: #a9a9a9 ;
+                           font-size: 2.6em;
+                       }
+                       input[type='submit'] {
+                           width: 100px;
+                           background-image: url('/assets/images/submit_icon.png');
+                           background-repeat: no-repeat;
+                           background-position: center;
+                       }
+                   }
+               }
+           }
+
+       }
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+      .footer{
+             color : white;
+             font-family: 'Slabo', 'Times New Roman', Times, serif;
+             font-size : 2.4em;
+             background : black;
+             padding : 40px;
+             width : 100vw;
+           }
